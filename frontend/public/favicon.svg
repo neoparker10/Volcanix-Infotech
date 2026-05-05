@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#1A1A2E"/>
+  <!-- Stylized V shape matching the Volcanix logo -->
+  <path d="M10 16 L32 48 L54 16 L46 16 L32 38 L18 16 Z" fill="#00C9C8"/>
+  <!-- Small dot accent -->
+  <circle cx="48" cy="20" r="3" fill="#E8B84B"/>
+</svg>

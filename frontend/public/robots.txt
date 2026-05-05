@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://volcanixinfotech.org/sitemap.xml
