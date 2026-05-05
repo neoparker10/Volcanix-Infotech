@@ -56,18 +56,18 @@ export default function HomePage() {
         <div className="absolute top-32 left-10 w-2 h-2 rounded-full bg-brand-cyan animate-float" />
         <div className="absolute bottom-40 right-20 w-1.5 h-1.5 rounded-full bg-brand-gold animate-float" style={{animationDelay: '2s'}} />
 
-        <div className="max-w-7xl mx-auto px-6 pt-28 pb-24 grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 pt-24 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="animate-fade-up">
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-8 bg-brand-cyan" />
               <span className="section-label">Software Agency · Kashmir</span>
             </div>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-8">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6 md:mb-8">
               Software Agency{' '}
               <span className="text-brand-cyan">That Thrives</span>
               {' '}on Your Success
             </h1>
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex flex-wrap gap-3">
               <Link to="/contact" className="btn-cyan text-base px-8 py-4">
                 Get a Quote <ArrowRight size={16} />
               </Link>
@@ -94,7 +94,7 @@ export default function HomePage() {
 
       {/* ── Stats bar ────────────────────────── */}
       <section className="bg-brand-sand border-y border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-10 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map(({ value, label, icon: Icon }) => (
             <div key={label} className="text-center">
               <Icon className="mx-auto mb-2 text-brand-cyan" size={20} />
@@ -106,7 +106,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Hire Us For ──────────────────────── */}
-      <section className="bg-white py-28 px-6">
+      <section className="bg-white py-16 md:py-28 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <RevealSection>
             <p className="section-label mb-4">What We Do</p>
@@ -115,7 +115,7 @@ export default function HomePage() {
             </h2>
           </RevealSection>
 
-          <div className="grid md:grid-cols-3 gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-3">
             {services.map(({ icon: Icon, title, desc }, i) => (
               <RevealSection key={title} delay={`reveal-delay-${i + 1}`}>
                 <div className={`p-10 h-full border-b md:border-b-0 ${i < 2 ? 'md:border-r' : ''} border-gray-100 group hover:bg-brand-dark transition-all duration-300`}>
@@ -136,8 +136,8 @@ export default function HomePage() {
       </section>
 
       {/* ── About snippet ────────────────────── */}
-      <section id="about" className="bg-brand-sand py-28 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section id="about" className="bg-brand-sand py-16 md:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <RevealSection>
             <p className="section-label mb-4">Who We Are</p>
             <h2 className="font-display text-4xl font-bold text-brand-dark mb-6">About Us</h2>
@@ -169,7 +169,7 @@ export default function HomePage() {
           </RevealSection>
 
           <RevealSection delay="reveal-delay-1">
-            <div className="relative">
+            <div className="relative mt-10 md:mt-0">
               <div className="aspect-[4/3] bg-brand-charcoal overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
@@ -187,7 +187,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Why Choose Us ────────────────────── */}
-      <section className="bg-white py-28 px-6">
+      <section className="bg-white py-16 md:py-28 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <RevealSection className="max-w-3xl mx-auto text-center mb-16">
             <p className="section-label mb-4">Our Difference</p>
@@ -202,7 +202,7 @@ export default function HomePage() {
             </p>
           </RevealSection>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               'Committed to delivering the best',
               'Honest and transparent services',
@@ -222,8 +222,8 @@ export default function HomePage() {
 
       {/* ── CTA Banner ───────────────────────── */}
       <section className="bg-brand-dark py-0 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 min-h-[420px]">
-          <div className="px-10 py-16 flex flex-col justify-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div className="px-6 sm:px-10 py-14 md:py-16 flex flex-col justify-center">
             <RevealSection>
               <p className="section-label mb-4">Start Today</p>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -238,7 +238,7 @@ export default function HomePage() {
               </Link>
             </RevealSection>
           </div>
-          <div className="relative overflow-hidden min-h-[280px]">
+          <div className="relative overflow-hidden min-h-[220px] md:min-h-[380px]">
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
               alt="Team collaboration"
@@ -250,8 +250,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Let Us Build ─────────────────────── */}
-      <section className="bg-brand-charcoal py-24 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="bg-brand-charcoal py-16 md:py-24 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <RevealSection>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight">
               Let us together build<br />

@@ -31,8 +31,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── Intro block ──────────────── */}
-      <section className="bg-brand-sand py-28 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="bg-brand-sand py-16 md:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <RevealSection>
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
@@ -81,8 +81,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── Mission & Vision ─────────── */}
-      <section className="bg-brand-dark py-28 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <section className="bg-brand-dark py-16 md:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <RevealSection>
             <div className="border border-white/10 p-10 h-full">
               <div className="w-1 h-10 bg-brand-cyan mb-8" />
@@ -121,7 +121,7 @@ export default function AboutPage() {
               </Link>
             </RevealSection>
           </div>
-          <div className="relative overflow-hidden min-h-[280px]">
+          <div className="relative overflow-hidden min-h-[220px] md:min-h-[360px]">
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
               alt="Team at work"
@@ -132,8 +132,8 @@ export default function AboutPage() {
       </section>
 
       {/* ── Let us build ─────────────── */}
-      <section className="bg-brand-charcoal py-24 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-brand-charcoal py-16 md:py-24 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <RevealSection>
             <h2 className="font-display text-4xl font-bold text-white leading-tight">
               Let us together build<br />

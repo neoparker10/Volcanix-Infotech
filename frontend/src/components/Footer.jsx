@@ -42,7 +42,7 @@ export default function Footer() {
     <footer className="bg-brand-dark text-white">
       {/* Subscribe strip */}
       <div className="border-b border-white/10 bg-[#F5F0E8]">
-        <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-brand-muted mb-1">Stay Updated</p>
             <h3 className="font-display text-2xl font-bold text-brand-dark">Subscribe to our newsletter</h3>
@@ -68,10 +68,11 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
         {/* Brand */}
-        <div>
-          <Link to="/" className="inline-flex items-center gap-2 mb-6">
+        <div className="sm:col-span-2 md:col-span-1">
+          <Link to="/" className="inline-flex items-center gap-2 mb-5">
+          
             <svg width="36" height="28" viewBox="0 0 40 32" fill="none">
               <path d="M0 2 L20 30 L40 2 L32 2 L20 22 L8 2 Z" fill="#00C9C8"/>
               <circle cx="36" cy="4" r="3" fill="#E8B84B"/>
@@ -147,7 +148,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="font-body text-xs text-white/40">
             Copyright © 2014–{new Date().getFullYear()} Volcanix Infotech Pvt. Ltd. | Mobile and Web App Development Company in Kashmir.
           </p>

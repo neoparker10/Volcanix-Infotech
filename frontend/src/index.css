@@ -42,7 +42,7 @@
   }
 
   .page-hero {
-    @apply bg-brand-dark text-white pt-36 pb-20 px-6 relative overflow-hidden;
+    @apply bg-brand-dark text-white pt-28 pb-14 md:pt-36 md:pb-20 px-4 sm:px-6 relative overflow-hidden;
   }
 
   .card-hover {

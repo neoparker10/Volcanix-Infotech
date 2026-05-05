@@ -63,11 +63,11 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Services list ────────────── */}
-      <section className="bg-brand-sand pb-28 px-6">
+      <section className="bg-brand-sand pb-16 md:pb-28 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto space-y-0">
           {services.map(({ icon: Icon, number, title, desc, color }, i) => (
             <RevealSection key={title} delay={`reveal-delay-${(i % 3) + 1}`}>
-              <div className={`grid md:grid-cols-2 gap-0 ${i % 2 === 1 ? '' : ''}`}>
+              <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Number block */}
                 <div className={`${color} p-14 flex flex-col justify-between min-h-[320px] ${i % 2 === 1 ? 'md:order-last' : ''}`}>
                   <div>
@@ -97,8 +97,8 @@ export default function ServicesPage() {
       </section>
 
       {/* ── CTA ──────────────────────── */}
-      <section className="bg-brand-dark py-24 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="bg-brand-dark py-16 md:py-24 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <RevealSection>
             <h2 className="font-display text-4xl font-bold text-white leading-tight">
               Have a Project<br /><span className="text-brand-cyan">in mind?</span>

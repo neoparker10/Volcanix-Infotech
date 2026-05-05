@@ -52,8 +52,8 @@ export default function ContactPage() {
       </section>
 
       {/* ── Contact section ──────────── */}
-      <section className="bg-brand-sand py-28 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+      <section className="bg-brand-sand py-16 md:py-28 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {/* Left: Info */}
           <RevealSection>
             <h2 className="font-display text-3xl font-bold text-brand-dark mb-8">
@@ -133,7 +133,7 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="font-mono text-xs text-brand-muted uppercase tracking-widest block mb-1.5">First Name *</label>
                       <input
