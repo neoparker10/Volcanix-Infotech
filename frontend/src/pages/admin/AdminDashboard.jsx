@@ -106,7 +106,7 @@ export default function AdminDashboard() {
             </div>
             <div className="flex justify-between">
               <span>Backend</span>
-              <span className="text-brand-cyan font-mono text-xs">Node.js + Express</span>
+              <span className="text-brand-cyan font-mono text-xs">Supabase Edge Functions</span>
             </div>
             <div className="flex justify-between">
               <span>Database</span>
